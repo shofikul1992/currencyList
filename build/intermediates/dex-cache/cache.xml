@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/agency.tango.android/material-intro-screen/0.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b821bc341f62ad65334507a90a2b07c9c7cfc53d">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/agency.tango.android-material-intro-screen-0.0.3_8d91139e4ef0507ceb246ac8638887261a84aaec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.github.GrenderG/Prefs/1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0492f89ef6b9760e6db56a8a644c35fcf419854d">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.github.GrenderG-Prefs-1.1_b8eeb6da6eff1189ddddb5f7669022d7b3a2576f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.0_afeab5e94ad704be82ee020b42c21385a9890809.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_28eb8e70b84de6815be7727cbf408dd6132c2ff3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.0_a08c2a6ce34ff3b43508390faac208a48468dca6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.0_49b468cb1234b240da9ca370f93ffbe8264a1f2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_ee825e4ab97f00e1f0bad02a59f2e3f2bb104164.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_8dc1bdbf91e41b5470c2e901e4775d4ee11760de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_c7e142e5d0cda1646645c278bf16ab2162b0a100.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.0_edf5bcd0eadc2df819404e2da32ba91f167b24bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.0_cf9fb1d43bb0a5be4e7176378298e754af894906.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.0_4b2b5f50c8e53b5b7e8edee7f64ea5e313d1263e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.0-rc2/6fd74ef202cfb785db12a652e153ea003123c36b/baseLibrary-2.2.0-rc2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6fd74ef202cfb785db12a652e153ea003123c36b">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/baseLibrary-2.2.0-rc2_8bf1765ac3544818ea5df2c25063b7dac686df93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.0_ef5f8cf29be535e92567aa1075ad0b2d7c306bdf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.0_43b63e721b85963a4fcb291eedfe56ff371145a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.0_5bf34207bae7b5903e4687260e275a9b4d0ca800.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_7c928204191dc64312e75c90b2039c41179350d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_1e60a0b9f150ee93d2a513a3949ad8cbc79bad47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_5995b2c109f61b8912c89d64b86e3a977a8cca61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.0_b45fbcd45a904ec663c9411172c372334e83a908.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.0_300a5b82883c4cf44a11db8918cbd0c119c9ad06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-8.4.0_4225f87b7ebe8bc2ecb609ff8842af04d0ce4a71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_30a740281e04450acbd03cae4485aa56ccf84334.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/Users/admin/Desktop/Currency-Converter-Android-master/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.0_68d0d7c1d69fd519de8e389bab550b60c5e0525f.jar" />
+    </item>
+
+</items>
