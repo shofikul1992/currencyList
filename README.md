@@ -9,7 +9,7 @@ Features present :
 * REAL-TIME CURRENCY EXCHANGE RATES
 * 180+ world currencies
 * Material design
-* Data updated every 5 minutes
+* com.ms.ucr.Data updated every 5 minutes
 * 2 decimal places for extreme accuracy
 * Tablet layout
 * Calculate prices with the currency converter

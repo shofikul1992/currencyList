@@ -3,8 +3,6 @@ package Adapter;
 import java.util.ArrayList;
 
 
-import Data.Currency_Names;
-import Data.Currency_Rates;
 import com.appisode.currencyconverter.R;
 
 
@@ -16,6 +14,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import Data.Currency_Names;
+import Data.Currency_Rates;
 
 public class Adapter_listview extends BaseAdapter{
 

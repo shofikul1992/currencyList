@@ -35,6 +35,8 @@ dependencies {
     compile 'com.google.android.gms:play-services-ads:8.4.0'
     compile 'com.android.support:design:22.2.1'
 
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+
     compile 'agency.tango.android:material-intro-screen:0.0.3'
 
     compile 'com.github.GrenderG:Prefs:1.1'

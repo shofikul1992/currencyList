@@ -18,7 +18,6 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -40,24 +39,23 @@ import Data.Currency_id_name;
 import HttpService.ServiceHandler;
 
 
-public class Fragment_MarketRates extends Fragment
-{
+public class Fragment_MarketRates extends Fragment {
 
-    private ProgressDialog  pDialog                                            ;
-    public JSONObject       jsonObj_rates=null , jsonObj_names=null            ;
-    String                  s_rtes , s_names,s_ids_names ,temp=null            ;
-    TextView                fixPrice                                           ;
-    ListView                listview                                           ;
-    Adapter_listview        adapter_listview                                   ;
-    RelativeLayout          root_layout                                        ;
-    View                    v                                                  ;
-    AdView                  mAdView	                        		 		   ;
+    private ProgressDialog pDialog;
+    public JSONObject jsonObj_rates = null, jsonObj_names = null;
+    String s_rtes, s_names, s_ids_names, temp = null;
+    TextView fixPrice;
+    ListView listview;
+    Adapter_listview adapter_listview;
+    RelativeLayout root_layout;
+    View v;
+    AdView mAdView;
     public static final String BASE_URL = "http://apilayer.net/api/";
     public static final String ENDPOINT = "live";
 
-    public static   ArrayList<Currency_Rates> list_currency_rates_data         ;
-    public static   ArrayList<Currency_Names> list_currency_names_data         ;
-    public static   ArrayList<Currency_id_name> list_currency_id_name          ;
+    public static ArrayList<Currency_Rates> list_currency_rates_data;
+    public static ArrayList<Currency_Names> list_currency_names_data;
+    public static ArrayList<Currency_id_name> list_currency_id_name;
 
     String url_currency_rates;
     String ulr_curency_namees;
@@ -66,36 +64,32 @@ public class Fragment_MarketRates extends Fragment
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-       v  = inflater.inflate(R.layout.fragment_marketrates,null);
+        v = inflater.inflate(R.layout.fragment_marketrates, null);
 
         //apilayer api key
-       String key= getActivity().getResources().getString(R.string.Currencylayer_Key);
+        String key = getActivity().getResources().getString(R.string.Currencylayer_Key);
 
-         url_currency_rates = BASE_URL + ENDPOINT + "?access_key=" + key;
-         ulr_curency_namees="http://www.apilayer.net/api/list?access_key="+key+"&format=1";
+        url_currency_rates = BASE_URL + ENDPOINT + "?access_key=" + key;
+        ulr_curency_namees = "http://www.apilayer.net/api/list?access_key=" + key + "&format=1";
 
 
-        listview        = (ListView)v.findViewById(R.id.listview);
-        root_layout     = (RelativeLayout)v.findViewById(R.id.parent_relative);
+        listview = (ListView) v.findViewById(R.id.listview);
+        root_layout = (RelativeLayout) v.findViewById(R.id.parent_relative);
 
         list_currency_id_name = new ArrayList<>();
         list_currency_rates_data = new ArrayList<>();
-        list_currency_names_data= new ArrayList<>();
+        list_currency_names_data = new ArrayList<>();
 
 
-        mAdView = (AdView)v.findViewById(R.id.adView);
-        AdRequest adr= new AdRequest.Builder().build();
+        mAdView = (AdView) v.findViewById(R.id.adView);
+        AdRequest adr = new AdRequest.Builder().build();
         mAdView.loadAd(adr);
 
 
-
         pDialog = new ProgressDialog(getActivity());
-        if(isNetworkAvailable())
-        {
+        if (isNetworkAvailable()) {
             new GetExchangeRates().execute();
-        }
-        else
-        {
+        } else {
             new AlertDialog.Builder(getActivity())
                     .setTitle("Internet Connection")
                     .setMessage("Please check your internet connection")
@@ -113,10 +107,7 @@ public class Fragment_MarketRates extends Fragment
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
 
-       }
-
-
-
+        }
 
 
         return v;
@@ -125,7 +116,7 @@ public class Fragment_MarketRates extends Fragment
 
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
-                = (ConnectivityManager)getActivity().getSystemService(getActivity().CONNECTIVITY_SERVICE);
+                = (ConnectivityManager) getActivity().getSystemService(getActivity().CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
@@ -150,18 +141,16 @@ public class Fragment_MarketRates extends Fragment
             String json_curncy_names = sh.makeServiceCall(ulr_curency_namees, ServiceHandler.GET);
 
 
-            try
-            {
+            try {
 
                 jsonObj_rates = new JSONObject(json_curny_rates);
 
                 jsonObj_names = new JSONObject(json_curncy_names);
 
                 s_rtes = jsonObj_rates.getJSONObject("quotes").toString();
-                Log.d("s_rates ",""+s_rtes);
-                s_names= jsonObj_names.getJSONObject("currencies").toString();
-            }catch (JSONException e)
-            {
+                Log.d("s_rates ", "" + s_rtes);
+                s_names = jsonObj_names.getJSONObject("currencies").toString();
+            } catch (JSONException e) {
                 Log.e("JSON Parser", "Error parsing data " + e.toString());
             }
 
@@ -179,37 +168,36 @@ public class Fragment_MarketRates extends Fragment
 
     }
 
-    public void add_country_ids_names()  {
+    public void add_country_ids_names() {
 
-        s_ids_names=s_ids_names.replace("{","");
-        s_ids_names=s_ids_names.replace("}","");
-        s_ids_names=s_ids_names.replace("\"","");
+        s_ids_names = s_ids_names.replace("{", "");
+        s_ids_names = s_ids_names.replace("}", "");
+        s_ids_names = s_ids_names.replace("\"", "");
 
-        StringTokenizer stok= new StringTokenizer(s_ids_names,",");
+        StringTokenizer stok = new StringTokenizer(s_ids_names, ",");
 
-        while(stok.hasMoreElements())
-        {
+        while (stok.hasMoreElements()) {
 
-            temp= stok.nextElement().toString();
+            temp = stok.nextElement().toString();
 
-            if(temp.indexOf("currencySymbol") != -1){
-                temp= stok.nextElement().toString();
-
-            }
-
-            String split[]= temp.split(":");
-
-            temp= stok.nextElement().toString();
-
-            if(temp.indexOf("currencySymbol") != -1){
-                temp= stok.nextElement().toString();
+            if (temp.indexOf("currencySymbol") != -1) {
+                temp = stok.nextElement().toString();
 
             }
 
-            String split2[]= temp.split(":");
+            String split[] = temp.split(":");
 
-            Log.d("Split 1",""+split[2]);
-            Log.d("Split 2",""+split2[1]);
+            temp = stok.nextElement().toString();
+
+            if (temp.indexOf("currencySymbol") != -1) {
+                temp = stok.nextElement().toString();
+
+            }
+
+            String split2[] = temp.split(":");
+
+            Log.d("Split 1", "" + split[2]);
+            Log.d("Split 2", "" + split2[1]);
 
             temp = null;
 
@@ -228,35 +216,32 @@ public class Fragment_MarketRates extends Fragment
 
     }
 
-    public void add_currency_rates()
-    {
-        s_rtes=s_rtes.replace("{","");
-        s_rtes=s_rtes.replace("}","");
-        s_rtes=s_rtes.replace("\"","");
+    public void add_currency_rates() {
+        s_rtes = s_rtes.replace("{", "");
+        s_rtes = s_rtes.replace("}", "");
+        s_rtes = s_rtes.replace("\"", "");
 
-        StringTokenizer stok= new StringTokenizer(s_rtes,",");
+        StringTokenizer stok = new StringTokenizer(s_rtes, ",");
 
-        while(stok.hasMoreElements())
-        {
+        while (stok.hasMoreElements()) {
 
-            String temp= stok.nextElement().toString();
+            String temp = stok.nextElement().toString();
 
-            String split[]= temp.split(":");
+            String split[] = temp.split(":");
 
 
             double amount = Double.parseDouble(split[1]);
 
-            DecimalFormat df1 = new DecimalFormat("#.###",new DecimalFormatSymbols(Locale.US));
+            DecimalFormat df1 = new DecimalFormat("#.###", new DecimalFormatSymbols(Locale.US));
 
             String refinedNumber = df1.format(amount);
 
             split[1] = String.valueOf(refinedNumber);
 
 
-            if(split[0].contentEquals("USDUSD"))
-            {
+            if (split[0].contentEquals("USDUSD")) {
 
-                fixPrice = (TextView)v.findViewById(R.id.priceTextFix);
+                fixPrice = (TextView) v.findViewById(R.id.priceTextFix);
                 String s = split[1];
                 fixPrice.setText(s);
             }
@@ -264,12 +249,11 @@ public class Fragment_MarketRates extends Fragment
             list_currency_rates_data.add(new Currency_Rates(split[0], split[1]));
 
 
-
         }
 
         Collections.sort(list_currency_rates_data, new Comparator<Currency_Rates>() {
             @Override
-            public int compare(Currency_Rates r1,Currency_Rates r2) {
+            public int compare(Currency_Rates r1, Currency_Rates r2) {
                 return r1.title.compareTo(r2.title);
             }
         });
@@ -277,22 +261,19 @@ public class Fragment_MarketRates extends Fragment
 
     }
 
-    public void add_country_names()
-    {
-        s_names=s_names.replace("{","");
-        s_names=s_names.replace("}","");
-        s_names=s_names.replace("\"","");
+    public void add_country_names() {
+        s_names = s_names.replace("{", "");
+        s_names = s_names.replace("}", "");
+        s_names = s_names.replace("\"", "");
 
-        StringTokenizer stoke= new StringTokenizer(s_names,",");
+        StringTokenizer stoke = new StringTokenizer(s_names, ",");
 
-        while(stoke.hasMoreElements())
-        {
+        while (stoke.hasMoreElements()) {
 
-            String temp= stoke.nextElement().toString();
-            String split[]= temp.split(":");
+            String temp = stoke.nextElement().toString();
+            String split[] = temp.split(":");
 
             list_currency_names_data.add(new Currency_Names(split[0], split[1]));
-
 
 
         }
@@ -306,15 +287,13 @@ public class Fragment_MarketRates extends Fragment
         });
 
 
-        adapter_listview= new Adapter_listview(getActivity(),list_currency_names_data,list_currency_rates_data);
+        adapter_listview = new Adapter_listview(getActivity(), list_currency_names_data, list_currency_rates_data);
         listview.setAdapter(adapter_listview);
 
         pDialog.dismiss();
 
 
     }
-
-
 
 
 }
